@@ -1,0 +1,31 @@
+{
+  "name": "empty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "pnpm tsx ./src/main.ts",
+    "dev": "pnpm tsx watch ./src/main.ts",
+    "check": "tsc --noEmit --skipLibCheck",
+    "test:w": "vitest --no-file-parallelism",
+    "test": "vitest run --no-file-parallelism"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cors": "^10.0.1",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.1.0",
+    "jose": "^5.9.6",
+    "puppeteer": "^23.8.0",
+    "tsx": "^4.19.2",
+    "user-agents": "^1.1.360"
+  },
+  "devDependencies": {
+    "@types/jsdom": "^21.1.7",
+    "@types/user-agents": "^1.0.4",
+    "vitest": "^2.1.5"
+  }
+}
